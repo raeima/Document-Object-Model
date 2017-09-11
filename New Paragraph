@@ -1,0 +1,11 @@
+HTML
+
+<p>Click the button to create a P element with some text.</p>
+<button onclick="myFunction()">Try it</button>
+
+Javascript
+
+function deathnote() {
+	var death = Math.floor(Math.random() * 4);
+	document.getElementsByClassName('stem')[death].innerHTML = "<img src= 'http://jonvilma.com/images/grim-reaper-7.jpg' width=10%>";
+}
