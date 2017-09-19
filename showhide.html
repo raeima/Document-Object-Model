@@ -1,0 +1,34 @@
+<html>
+<head>
+  <style>
+    #stem {
+      display: none;
+      //I have set the image to be invisible when the page loads by default.
+    }
+  </style>
+  <body>
+    <div id="stem">
+      <img src="http://koalainfo.com/koalas-diet/koalas-eucalyptus-leaves.jpg">
+    </div>
+    <p>
+      There's somethin nom nommin over there...ISSA KOALA WOOOOOOOOT
+    </p>
+    <button onclick="showAnswer()">
+      Show/Hide
+    </button>
+    <script>
+      function showAnswer() {
+      var image = document.getElementById('stem');
+      //I get the contents of the stem ID and save it as the variable image.
+      if (image.style.display === 'block') {
+        //If the display is shown on the screen....
+        image.style.display = 'none';
+        //I make it invisible.
+      } else {
+        image.style.display = 'block';
+        //If it is invisible, I will display it.
+      }
+    }
+    </script>
+  </body>
+</html>
